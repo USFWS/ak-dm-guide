@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-02-06">
 <meta name="description" content="short descriptions of Data Management Policy and implications">
 
-<title>TEST: Alaska Region Data Management User Guide</title>
+<title>data-management-policy – TEST: Alaska Region Data Management User Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,17 +32,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../alaska-data-management-101/alaska-regional-data-repository.html" rel="next">
-<link href="../alaska-data-management-101/workflow.html" rel="prev">
+<link href="../alaska-data-management-101/file-organization-and-best-practices/index.html" rel="next">
+<link href="../alaska-data-management-101/index.html" rel="prev">
+<link href="../ak-forum-icon_200-tr.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-037ab756c184cec9e0868a9dc85163d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -84,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">TEST: Alaska Region Data Management User Guide</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -101,19 +103,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../alaska-data-management-101/index.html">Ak DM 101</a></li><li class="breadcrumb-item"><a href="../alaska-data-management-101/data-management-policy.html">Data Management Policy</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -134,34 +136,22 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../alaska-data-management-101/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ak DM 101</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../alaska-data-management-101/workflow.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Workflow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../alaska-data-management-101/data-management-policy.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Management Policy</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../alaska-data-management-101/alaska-regional-data-repository.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Alaska Regional Data Repository</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
- <span class="menu-text">File Organization and Best Practices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <a href="../alaska-data-management-101/file-organization-and-best-practices/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">new index ak-dm-folder updated</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -180,23 +170,70 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../alaska-data-management-101/alaska-regional-data-repository.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alaska Regional Data Repository</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../alaska-data-management-101/workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflow</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../background/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New-background</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../background/why-data-managment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Data Managment?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../background/the-big-picture-integrating-data-management-with-project-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Big Picture: Integrating Data Management with Project Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../background/definition-of-project-and-product-aka-data-resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Definition of Project and Product (aka Data Resources)</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../CONTRIBUTING.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CONTRIBUTING</span></a>
+ <span class="menu-text">How to contribute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LICENSE.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LICENSE</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Acquire</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../acquire/quality-management-procedures.html" class="sidebar-item-text sidebar-link">
@@ -207,11 +244,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../acquire/common-data-types/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Common Data Types</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../acquire/common-data-types/best-practices-in-databases.html" class="sidebar-item-text sidebar-link">
@@ -260,11 +297,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../acquire/file-organization-and-best-practices/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">File Organization and Best Practices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../acquire/file-organization-and-best-practices/best-practices-in-naming-conventions.html" class="sidebar-item-text sidebar-link">
@@ -275,13 +312,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
  <span class="menu-text">Quality Management Procedures</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../acquire/quality-management-procedures/incorporating-data-standards.html" class="sidebar-item-text sidebar-link">
@@ -300,13 +337,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
  <span class="menu-text">Appendix</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendix/appendix-a-interim-data-management-quick-guide.html" class="sidebar-item-text sidebar-link">
@@ -335,38 +372,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../background/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Background</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../background/why-data-managment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Why Data Managment?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../background/the-big-picture-integrating-data-management-with-project-management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Big Picture: Integrating Data Management with Project Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../background/definition-of-project-and-product-aka-data-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Definition of Project and Product (aka Data Resources)</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
             <a href="../four-fundamental-activities-of-data-management/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Four Fundamental Activities of Data Management</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -401,7 +409,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../long-term-storage-options/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Long-term Storage Options</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -424,7 +432,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../planning/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -451,7 +459,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../planning/data-management-plan/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Management Plan Templates</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -468,9 +476,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
  <span class="menu-text">Maintain</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -485,9 +493,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
  <span class="menu-text">Sharing 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -496,7 +504,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../sharing-1/untitled/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open Data Requirements</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -530,35 +538,71 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">TOC title</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-management-policy" id="toc-data-management-policy" class="nav-link active" data-scroll-target="#data-management-policy">Data Management Policy</a></li>
+  <li><a href="#data-management-policy" id="toc-data-management-policy" class="nav-link active" data-scroll-target="#data-management-policy">Data Management Policy</a>
+  <ul class="collapse">
+  <li><a href="#usfws-policy-274-fw-1-data-management" id="toc-usfws-policy-274-fw-1-data-management" class="nav-link" data-scroll-target="#usfws-policy-274-fw-1-data-management">USFWS Policy 274 FW 1 Data Management</a></li>
+  <li><a href="#open-public-electronic-and-necessary-open-government-data-act" id="toc-open-public-electronic-and-necessary-open-government-data-act" class="nav-link" data-scroll-target="#open-public-electronic-and-necessary-open-government-data-act">Open, Public, Electronic, and Necessary (OPEN) Government Data Act</a>
+  <ul class="collapse">
+  <li><a href="#memo-open-data-policy-managing-information-as-an-asset" id="toc-memo-open-data-policy-managing-information-as-an-asset" class="nav-link" data-scroll-target="#memo-open-data-policy-managing-information-as-an-asset">Memo: Open Data Policy-Managing Information as an Asset</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../alaska-data-management-101/index.html">Ak DM 101</a></li><li class="breadcrumb-item"><a href="../alaska-data-management-101/data-management-policy.html">Data Management Policy</a></li></ol></nav>
+<div class="quarto-title">
+</div>
 
+<div>
+  <div class="description">
+    short descriptions of Data Management Policy and implications
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2025-02-06</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <section id="data-management-policy" class="level1">
 <h1>Data Management Policy</h1>
-<p><strong>USFWS Policy 274 FW 1 Data Management</strong></p>
+<section id="usfws-policy-274-fw-1-data-management" class="level2">
+<h2 class="anchored" data-anchor-id="usfws-policy-274-fw-1-data-management">USFWS Policy 274 FW 1 Data Management</h2>
 <p>The <a href="https://www.fws.gov/policy/274fw1.html#_30j0zll">USFWS Data Management Policy</a> was written to ensure that USFWS was a responsible public steward of data, managing it as a key strategic asset. The policy requires a data management plan, data description with an applicable metadata standard and maintained in a machine-readable open format, </p>
 <p>This policy also applies when USFWS employees work in collaborative projects with other organizations, including non-FWS staffed Joint Ventures, where non-FWS staff may be engaged in activities that would fall under FWS data management policy as “contractors, and volunteers who collect, create, distribute, or manage data for the Service” (274 FW 1.2 A(2)). Therefore, data produced by these efforts are Service data assets.</p>
 <p>Contracts and agreements awarded to “non-Service entities to collect, create, distribute, or manage data for the Service” are required to “ensure that Service maintains access to our data and incorporate any other applicable requirement in this policy” (274 FW 1.8 A(2)).</p>
 <p>As stated in 274 FW 1.2 B, legacy data produced prior to October 1, 2020 does not fall under the current data management policy “unless used in an ongoing activity or provided to the public.”</p>
 <p>Policy also requires that data should be made publicly accessible “to the extent possible and legally permissible” (274 FW 1.11), including when sensitive data has been integrated or manipulated in such a way that the product can be safely distributed to the public. Restrictions to public access requires a legal justification such as a FOIA exemption.</p>
 <p>Data must also be available internally. Custodians “must store data in a repository that will allow the appropriate Service employees to access it in a timely manner”. This location must be documented as part of the metadata (274 FW 1.8 D).</p>
-<p><strong>Open, Public, Electronic, and Necessary (OPEN) Government Data Act</strong> (S. 760/H.R. 1770); Title II of Foundations for Evidence-Based Policymaking Act of 2018) </p>
+</section>
+<section id="open-public-electronic-and-necessary-open-government-data-act" class="level2">
+<h2 class="anchored" data-anchor-id="open-public-electronic-and-necessary-open-government-data-act">Open, Public, Electronic, and Necessary (OPEN) Government Data Act</h2>
+<p>(S. 760/H.R. 1770); Title II of Foundations for Evidence-Based Policymaking Act of 2018) </p>
 <p><a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text">This law</a> is the legal requirement for DOI agencies to share data assets with the public as open data, using standardized, non-proprietary formats, and are data machine-readable, cataloged under open license in a comprehensive inventory with appropriate metadata, administered by GSA (currently Data.gov).</p>
-<section id="memo-open-data-policy-managing-information-as-an-asset" class="level4">
-<h4 class="anchored" data-anchor-id="memo-open-data-policy-managing-information-as-an-asset">Memo: Open Data Policy-Managing Information as an Asset</h4>
+<section id="memo-open-data-policy-managing-information-as-an-asset" class="level3">
+<h3 class="anchored" data-anchor-id="memo-open-data-policy-managing-information-as-an-asset">Memo: Open Data Policy-Managing Information as an Asset</h3>
 <p> <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf">OMB M-13-13</a> states “<em>Open data are published in primary forms (i.e., as collected at the source), with the finest possible level of granularity that is practicable and permitted by law and other requirements. Derived or aggregate open data should also be published but must reference the primary data<strong>“</strong></em></p>
 <p>This means that raw data and the cleaned data, both, are required to be openly published.</p>
-</section>
 <section id="national-geospatial-data-act-of-2018-ngda43-u.s.c.-chapter-46-2801-2811" class="level4">
 <h4 class="anchored" data-anchor-id="national-geospatial-data-act-of-2018-ngda43-u.s.c.-chapter-46-2801-2811"> National Geospatial Data Act of 2018 (NGDA)(43 U.S.C. Chapter 46, 2801-2811)</h4>
 <p>This law codified the Federal Geographical Data Committee that is responsible for developing, implementing, and reviewing the policies, practices, and standards relating to geospatial data; establish standards for NGDA data themes, including rules, conditions, guidelines, and characteristics, and also establishes content standards for metadata, consistent with international standards; establishes GeoPlatform required to be made available through the Internet, be accessible through a common interface, include metadata for all geospatial data collected, directly or indirectly, by covered agencies, and include a set of programming instructions and standards that would provide an automated means of accessing geospatial data. </p>
@@ -595,6 +639,8 @@ ul.task-list li input[type="checkbox"] {
 <p>updated August 2022</p>
 
 
+</section>
+</section>
 </section>
 </section>
 
@@ -634,18 +680,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -677,7 +712,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -685,7 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -782,7 +837,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1010,17 +1064,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../alaska-data-management-101/workflow.html" class="pagination-link" aria-label="Workflow">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Workflow</span>
+      <a href="../alaska-data-management-101/index.html" class="pagination-link" aria-label="Ak DM 101">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ak DM 101</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../alaska-data-management-101/alaska-regional-data-repository.html" class="pagination-link" aria-label="Alaska Regional Data Repository">
-        <span class="nav-page-text">Alaska Regional Data Repository</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../alaska-data-management-101/file-organization-and-best-practices/index.html" class="pagination-link" aria-label="new index ak-dm-folder updated">
+        <span class="nav-page-text">new index ak-dm-folder updated</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Contacts.aspx">
+<p>DM Contacts</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../license.md">
+<p>License</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../trademark.qmd">
+<p>Trademark</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Page updated: 2025-02-06
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
