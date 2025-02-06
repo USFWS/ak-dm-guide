@@ -1,7 +1,5 @@
 ---
-title: "AK Region Data Stewardship Team"
-date: "now"
-date-format: "iso"
+title: "AK Region Data Management Team"
 ---
 
 # Alaska Region Interim Data Management User Guide

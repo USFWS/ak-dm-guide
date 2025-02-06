@@ -4,23 +4,24 @@ project:
   render:
     - "*"
     - "!CHANGELOG.md"
+    - "!LICENSE.md"
     - "!docs/"
 
 website:
   title: "TEST: Alaska Region Data Management User Guide"
+  favicon: ak-forum-icon_200-tr.png
   page-navigation: true
 
   page-footer:
     center: 
-      - text: "About"
-        href: about.qmd
+      - text: "DM Contacts"
+        href: https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Contacts.aspx
       - text: "License"
         href: license.md
       - text: "Trademark"
         href: trademark.qmd
     right:
-      - text: "last mod: {{< meta date >}}"
-#        date: "now"
+      - text: "Page updated: {{< meta date >}}"
   
   search:
     location: sidebar
@@ -69,8 +70,12 @@ format:
 #    smooth-scroll: true
     theme: default
     css: styles.css
+    code-block-bg: "000000"
+    code-block-border-left: "ffffff"
+    date: last-modified
+    date-format: iso
     toc: true
-    toc-title: TOC title
+    toc-title: On this page
 #    number-sections: true
 #
 #    other-links:
