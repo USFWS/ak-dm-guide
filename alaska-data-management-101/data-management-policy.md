@@ -5,7 +5,7 @@ order: 2
 
 # Data Management Policy
 
-**USFWS Policy 274 FW 1 Data Management**
+## USFWS Policy 274 FW 1 Data Management
 
 The [USFWS Data Management Policy](https://www.fws.gov/policy/274fw1.html#\_30j0zll) was written to ensure that USFWS was a responsible public steward of data, managing it as a key strategic asset. The policy requires a data management plan,  data description with an applicable metadata standard and maintained in a machine-readable open format,&#x20;
 
@@ -19,11 +19,12 @@ Policy also requires that data should be made publicly accessible “to the exte
 
 Data must also be available internally.  Custodians "must store data in a repository that will allow the appropriate Service employees to access it in a timely manner". This location must be documented as part of the metadata (274 FW 1.8 D).
 
-**Open, Public, Electronic, and Necessary (OPEN) Government Data Act** (S. 760/H.R. 1770); Title II of Foundations for Evidence-Based Policymaking Act of 2018)&#x20;
+## Open, Public, Electronic, and Necessary (OPEN) Government Data Act
+ (S. 760/H.R. 1770); Title II of Foundations for Evidence-Based Policymaking Act of 2018)&#x20;
 
 [This law](https://www.congress.gov/bill/115th-congress/house-bill/4174/text) is the legal requirement for DOI agencies to share data assets with the public as open data, using standardized, non-proprietary formats, and are data machine-readable, cataloged under open license in a comprehensive inventory with appropriate metadata, administered by GSA (currently Data.gov).
 
-#### Memo: Open Data Policy-Managing Information as an Asset
+### Memo: Open Data Policy-Managing Information as an Asset
 
 &#x20;[OMB M-13-13](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf) states "_Open data are published in primary forms (i.e., as collected at the source), with the finest possible level of granularity that is practicable and permitted by law and other requirements. Derived or aggregate open data should also be published but must reference the primary data**"**_
 

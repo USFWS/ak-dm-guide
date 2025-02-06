@@ -3,7 +3,6 @@ description: Brief workflow checklist and descriptions of data management steps 
 updated: 2025-01-02
 date: last-modified
 date-format: YYYY-MM-DDTHH:mm:ssZ
-order: 1
 ---
 
 # Workflow
