@@ -8,10 +8,17 @@ project:
     - "!docs/"
 
 website:
-  title: "TEST: Alaska Region Data Management User Guide"
+  title: "Alaska Region Data Management Guide"
+  description: "General data management guidance and best practices for Alaska Region staff"
   favicon: ak-forum-icon_200-tr.png
   page-navigation: true
-
+  repo-url: https://github.com/USFWS/ak-dm-guide
+#  issue-url: Https://www.fws.gov
+  repo-actions: [edit, issue, source]
+  other-links:
+    - text: Submit Feedback or suggest a change
+      icon: file-text
+      href: https://doimspp.sharepoint.com/sites/fws-FF07D00000
   page-footer:
     center: 
       - text: "DM Contacts"
