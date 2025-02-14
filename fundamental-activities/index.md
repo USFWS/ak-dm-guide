@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Four Fundamental Activities of Data Management
 
 There are four fundamental activities of data management;

@@ -1,6 +1,6 @@
 ---
-title: Ak DM 101
-order: 1
+title: Data Management 101
+order: 4
 toc: false
 other-links: false
 navbar-right: false

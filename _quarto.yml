@@ -3,16 +3,23 @@ project:
   output-dir: docs
   render:
     - "*"
-    - "!CHANGELOG.md"
     - "!LICENSE.md"
     - "!docs/"
 
 website:
   title: "Alaska Region Data Management Guide"
   description: "General data management guidance and best practices for Alaska Region staff"
+  announcement:
+    content:  \"Edit this page\" link now directs to dev branch!
+    icon: newspaper
+    position: below-navbar
+    type: danger
+    
   favicon: ak-forum-icon_200-tr.png
+  reader-mode: true
   page-navigation: true
   repo-url: https://github.com/USFWS/ak-dm-guide
+  repo-branch: dev
 #  issue-url: Https://www.fws.gov
   repo-actions: [edit, issue, source]
   other-links:
@@ -25,8 +32,6 @@ website:
         href: https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Contacts.aspx
       - text: "License"
         href: license.md
-      - text: "Trademark"
-        href: trademark.qmd
     right:
       - text: "Page updated: {{< meta date >}}"
   
@@ -37,36 +42,53 @@ website:
   sidebar:
     style: docked
     background: light
-    contents: auto
-#    contents:    
-#      - alaska-data-management-101/*
-#      - planning/index.md
-#      
+    collapse-level: 1
+#    contents: auto
+    contents:    
+      - index.md
+      - auto: background
+      - auto: fundamental-activities
+      - auto: alaska-data-management-101
+      - auto: planning
+      - auto: acquire
+      - auto: maintain
+      - auto: share
+      - auto: storage-options
+      - text: "---"
+      - section: "Site Maintenance"
+      - CONTRIBUTING.md
+      - CHANGELOG.md
+    
 #      - section: "section 1"
-#        contents: index.md
-#        
+#        contents: "index.md"
 #          - href: "alaska-data-management-101"
-#          
+       
 #      - section: "Section 2"
 #        contents: auto
-#        
+     
+#      contents:
+#        - text: Plan
+#          href: "planning"
+       
+# --- This recursively renders all documents
+#       - section: "Acquire"
 #        contents:
-#          - text: Plan
-#            href: "planning"
-#          
-#      - section: "Acquire"
-#        contents:
-#          - auto: "acquire/*"
-#        
+#          - auto: "acquire"
+#      - text: "---"
 #      - section: "Maintain"
 #        contents: maintain
-#        
+#     
 #      - section: "Access & Share"
+
   navbar:
     right:
-      - icon: github
-        href: https://github.com/hmaier-fws/ak-dm-userguide
-        text: GitHub Source
+      - icon: person-arms-up
+        text: Contact
+        href: https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Contacts.aspx
+        
+      - icon: file-diff
+        href: https://github.com/hmaier-fws/ak-dm-guide/commits/test-pages/
+        text: Recent Changes
       - href: https://ak-region-dst.gitbook.io/alaska-region-interim-data-management-user-guide
         text: Original Site
         icon: tencent-qq

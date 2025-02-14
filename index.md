@@ -1,8 +1,7 @@
 ---
-title: "AK Region Data Management Team"
+title: "AK Region Data Management Guide"
+order: 1
 ---
-
-# TEST pages TEST
 
 Planning, acquiring, maintaining, sharing, and archiving are all important steps of proper data management. The Alaska Region Data Management Guide was designed to walk staff through each of these steps, with procedures, documents, and best practices specific to the Region. Fisheries and Ecological Services, Migratory Bird Management, National Wildlife Refuge System, and the Office of Subsistence Management staff should look to this guide for **regional** data management support. Supplementing this document are additional region-specific resources, including:
 

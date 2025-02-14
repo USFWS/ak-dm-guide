@@ -1,5 +1,6 @@
 ---
 title: Plan
+order: 5
 ---
 
 # Planning

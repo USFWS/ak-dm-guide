@@ -1,9 +1,8 @@
 ---
-title: New-background
 order: 2
 ---
 
-# H1 - Background
+# Background
 
 The Alaska Region of the U.S. Fish and Wildlife Service is committed to improving the management of its data resources and is included in the regional strategic intent.  As a result, a comprehensive, long-term plan to develop and implement a **Regional Data Management System (RDMS)** began in the spring of 2020, with the expectation that the RDMS will be operational and in use in 3 to 5 years.&#x20;
 
