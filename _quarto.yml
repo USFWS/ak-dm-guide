@@ -21,11 +21,13 @@ website:
   repo-url: https://github.com/USFWS/ak-dm-guide
   repo-branch: dev
 #  issue-url: Https://www.fws.gov
-  repo-actions: [edit, issue, source]
+
+  repo-actions: [edit]
   other-links:
     - text: Submit Feedback or suggest a change
       icon: file-text
       href: https://doimspp.sharepoint.com/sites/fws-FF07D00000
+
   page-footer:
     center: 
       - text: "DM Contacts"
@@ -54,6 +56,7 @@ website:
       - auto: maintain
       - auto: share
       - auto: storage-options
+      - auto: appendix
       - text: "---"
       - section: "Site Maintenance"
       - CONTRIBUTING.md
@@ -89,9 +92,10 @@ website:
       - icon: file-diff
         href: https://github.com/hmaier-fws/ak-dm-guide/commits/test-pages/
         text: Recent Changes
+        
       - href: https://ak-region-dst.gitbook.io/alaska-region-interim-data-management-user-guide
         text: Original Site
-        icon: tencent-qq
+        icon: book
 
 format:
   html:
