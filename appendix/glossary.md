@@ -1,8 +1,9 @@
 # Glossary
 
+
 _When consistent with usage in this document, definitions have been pulled from various other resources including Wikipedia,_ [_Open Data Handbook glossary_](http://opendatahandbook.org/glossary/en/)_,_ [_Duke Law EDRM glossary_](https://www.edrm.net/collections/edrmglossary/)_, and the_ [_Open Government Data Act_](https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95) _codification of act definitions_ [_44 usc 3502_](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title44-section3502\&num=0\&edition=prelim)_. It is possible to find alternative and contradictory definitions in other data management resources resources. The definitions provided here are those implied by the term’s usage in this document._
 
-**Accessibility**: the degree to which the resource is obtainable by an interested party. Direct access without constraint would be the most accessible (e.g. resources that may be downloaded without requiring a login), whereas resources that require third-party intervention would be less accessible.&#x20;
+**Accessibility**: the degree to which the resource is obtainable by an interested party. Direct access without constraint would be the most accessible (e.g. resources that may be downloaded without requiring a login), whereas resources that require third-party intervention would be less accessible.
 
 **Archive Folder**: a consistent file structure with use constraints and backup schedule that houses the definitive record of a project’s data resources. Products in the archive folder are the subject of metadata records and are the versions intended for use and dissemination. Contrast with working folder.
 
@@ -36,14 +37,14 @@ _When consistent with usage in this document, definitions have been pulled from 
 
 **Project**: a discrete effort on a particular topic with defined objectives or goals.
 
-**Project Management**: the practice of initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria at the specified time.&#x20;
+**Project Management**: the practice of initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria at the specified time.
 
 **Quality Assurance**: preventing errors. The maintenance of a desired level of quality in a product, by means of attention to every stage of the process of acquisition, manipulation, and use
 
 **Quality Control**: identifying and correcting errors. Process of review to reduce or eliminate errors made during data acquisition and manipulation.
 
-**Reproducible** (analyses, workflow, or research): structuring activities so that a product (e.g., a data set, analysis result, or report) can be repeated and the same results achieved. Replication could be achieved by either the same person or team that created the original product or a different team. Documentation and scripted work flows play a key role in reproducibility.  &#x20;
+**Reproducible** (analyses, workflow, or research): structuring activities so that a product (e.g., a data set, analysis result, or report) can be repeated and the same results achieved. Replication could be achieved by either the same person or team that created the original product or a different team. Documentation and scripted work flows play a key role in reproducibility.
 
 **Tidy Data**: standard way of relating the structure of a dataset to its meaning. Specifically, each row represents an observation and each column represents a variable recorded on an observation.
 
-**Working Folder**: a file structure used by an individual, or a group in collaboration, to store data resources under production during the course of a project’s implementation. Contrast with archive folder.\
+**Working Folder**: a file structure used by an individual, or a group in collaboration, to store data resources under production during the course of a project’s implementation. Contrast with archive folder.

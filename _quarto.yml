@@ -107,6 +107,7 @@ format:
     code-block-border-left: "ffffff"
     date: last-modified
     date-format: iso
+    anchor-sections: true
     toc: true
     toc-title: On this page
 #    number-sections: true

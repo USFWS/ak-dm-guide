@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-02-06">
+<meta name="dcterms.date" content="2025-02-18">
 
 <title>using-unique-identifiers – Alaska Region Data Management Guide</title>
 <style>
@@ -400,12 +400,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Open Formats</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../acquire/common-data-types/page-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item">
@@ -601,7 +595,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#using-unique-identifiers" id="toc-using-unique-identifiers" class="nav-link active" data-scroll-target="#using-unique-identifiers">Using Unique Identifiers</a>
   <ul class="collapse">
   <li><a href="#identifier-best-practices" id="toc-identifier-best-practices" class="nav-link" data-scroll-target="#identifier-best-practices">Identifier Best Practices</a></li>
-  <li><a href="#options-for-creating-uuids" id="toc-options-for-creating-uuids" class="nav-link" data-scroll-target="#options-for-creating-uuids">Options for creating UUIDs</a></li>
+  <li><a href="#options-for-creating-uuids" id="toc-options-for-creating-uuids" class="nav-link" data-scroll-target="#options-for-creating-uuids">Options for creating UUIDs</a>
+  <ul class="collapse">
+  <li><a href="#online-uuid-generator" id="toc-online-uuid-generator" class="nav-link" data-scroll-target="#online-uuid-generator">Online UUID Generator</a></li>
+  <li><a href="#excel" id="toc-excel" class="nav-link" data-scroll-target="#excel">Excel</a></li>
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/USFWS/ak-dm-guide/edit/dev/acquire/quality-management-procedures/using-unique-identifiers.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://doimspp.sharepoint.com/sites/fws-FF07D00000"><i class="bi bi-file-text"></i>Submit Feedback or suggest a change</a></li></ul></div></nav>
@@ -621,7 +621,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025-02-06</p>
+      <p class="date">2025-02-18</p>
     </div>
   </div>
   
@@ -635,7 +635,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="using-unique-identifiers" class="level1">
 <h1>Using Unique Identifiers</h1>
-<p>It is a best practice to add unique identifiers to table records during or immediately after data entry. If you are working with a long-standing dataset, it is recommended to add unique identifiers before conducting any tidying procedures. This addition not only prevents errors, but allows you to cross-reference with previous versions of the dataset. </p>
+<p>It is a best practice to add unique identifiers to table records during or immediately after data entry. If you are working with a long-standing dataset, it is recommended to add unique identifiers before conducting any tidying procedures. This addition not only prevents errors, but allows you to cross-reference with previous versions of the dataset.</p>
 <p>Before you begin, verify the current dataset does not contain duplicate records. This is particularly important if unique identifiers are being applied for the first time to a long-standing dataset. For example, In a bird banding dataset, you may concatenate the species, band number and date variables into a new column and check for uniqueness using the <a href="https://support.microsoft.com/en-us/office/filter-for-unique-values-or-remove-duplicate-values-ccf664b0-81d6-449b-bbe1-8daaec1e83c2">Conditional Formatting command in Excel</a>.</p>
 <p>Once record uniqueness is established, add a column of unique identifiers. This may be done by concatenating values from key variables in the dataset or creating universally unique identifiers. <strong>Key variables</strong> are existing variables in the dataset that, separately and/or in combination, uniquely identify the record. <strong>Universally Unique Identifiers (UUIDs)</strong> are a formula-generated 128-bit integer number used to identify resources. 128-bits is big enough and the generation algorithm is unique enough that if every human on Earth generated 600,000,000 UUIDs there would only be a 50% probability of a duplicate.</p>
 <section id="identifier-best-practices" class="level2">
@@ -643,19 +643,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Name the identifier column something unique and “identifying”. A few options are “identifierID”, “recordID”, or “occurenceID”.</li>
 <li>Utilize numeric identifiers to increase efficiency of sorting and filtering records. Do not use spaces, special characters or accents in the identifiers, since they may be modified when the dataset is converted in different formats.</li>
-<li>Limit the number of characters used in identifiers or utilize separators to avoid truncation. Specifically, Microsoft Excel has a character limit of 15 for numeric values and any digits past the fifteenth place is changed to zero. However, this can be avoided by inserting separators in the identifier (i.e.&nbsp;UUIDs use dashes). </li>
+<li>Limit the number of characters used in identifiers or utilize separators to avoid truncation. Specifically, Microsoft Excel has a character limit of 15 for numeric values and any digits past the fifteenth place is changed to zero. However, this can be avoided by inserting separators in the identifier (i.e.&nbsp;UUIDs use dashes).</li>
 <li>If you create identifiers with key variables, ensure the variables uniquely identify each observation. Variables that have missing, zero, or null values are not suitable as key variables. Further, consider whether it is possible for an identifier comprised of concatenated key variables to be duplicated. Example: In a bird banding dataset, species, band number, and date may be suitable as key variables in combination IF the previously stated conditions are met.</li>
 </ul>
 </section>
 <section id="options-for-creating-uuids" class="level2">
 <h2 class="anchored" data-anchor-id="options-for-creating-uuids">Options for creating UUIDs</h2>
-<p><strong>Online UUID Generator</strong></p>
+<section id="online-uuid-generator" class="level3">
+<h3 class="anchored" data-anchor-id="online-uuid-generator">Online UUID Generator</h3>
 <p>Create a bulk number of UUIDs using one of many <a href="https://www.uuidgenerator.net/"><strong>online UUID generators</strong></a> and paste the requisite number in the designated identifier column of the dataset.</p>
-<p><strong>Excel</strong></p>
-<p>Create a copy of the empty identifier column in the dataset. Paste the following into the first cell of the copied column: </p>
+</section>
+<section id="excel" class="level3">
+<h3 class="anchored" data-anchor-id="excel">Excel</h3>
+<p>Create a copy of the empty identifier column in the dataset. Paste the following into the first cell of the copied column:</p>
 <p>=LOWER(CONCATENATE(DEC2HEX(RANDBETWEEN(0,4294967295),8),“-”,DEC2HEX(RANDBETWEEN(0,65535),4),“-”,DEC2HEX(RANDBETWEEN(16384,20479),4),“-”,DEC2HEX(RANDBETWEEN(32768,49151),4),“-”,DEC2HEX(RANDBETWEEN(0,65535),4),DEC2HEX(RANDBETWEEN(0,4294967295),8)))</p>
 <p>Drag the cell with the formula to the bottom of the dataset. When each record has a UUID, highlight the column and copy /’paste special’ to the original identifier column and select ‘Values’ to make sure that only the values are pasted and not formulas. Delete the identifier column with formulas.</p>
-<p><strong>R</strong></p>
+</section>
+<section id="r" class="level3">
+<h3 class="anchored" data-anchor-id="r">R</h3>
 <p>You can generate UUIDs in <a href="https://www.r-project.org/about.html"><strong>R</strong></a> using various package. One option is the function <a href="https://www.rdocumentation.org/packages/uuid/versions/1.0-4/topics/UUIDgenerate"><code>UUIDgenerate()</code></a>from the <a href="https://cran.r-project.org/web/packages/uuid/index.html"><strong>uuid package</strong></a>. The following code demonstrates how to add an identifier column with UUIDs to a example data frame. Paste and run the code in <a href="https://www.rstudio.com/products/rstudio/#rstudio-desktop">RStudio</a>to see how it works.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -684,8 +689,9 @@ Note
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                         </span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Add the UUIDs to the identifier column in the data frame</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>my.df<span class="sc">$</span>identifierID<span class="ot">&lt;-</span>id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="python" class="level4">
-<h4 class="anchored" data-anchor-id="python">Python</h4>
+</section>
+<section id="python" class="level3">
+<h3 class="anchored" data-anchor-id="python">Python</h3>
 <p>in development</p>
 
 
@@ -1146,7 +1152,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- Page updated: 2025-02-06
+ Page updated: 2025-02-18
   </li>  
 </ul>
     </div>

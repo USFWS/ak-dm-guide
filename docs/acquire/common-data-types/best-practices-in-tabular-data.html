@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-02-06">
+<meta name="dcterms.date" content="2025-02-18">
 
 <title>best-practices-in-tabular-data – Alaska Region Data Management Guide</title>
 <style>
@@ -366,12 +366,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Open Formats</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../acquire/common-data-types/page-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item">
@@ -567,7 +561,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#best-practices-in-tabular-data" id="toc-best-practices-in-tabular-data" class="nav-link active" data-scroll-target="#best-practices-in-tabular-data">Best Practices in Tabular Data</a>
   <ul class="collapse">
   <li><a href="#tidy-data" id="toc-tidy-data" class="nav-link" data-scroll-target="#tidy-data">Tidy Data</a></li>
-  <li><a href="#untidy-data" id="toc-untidy-data" class="nav-link" data-scroll-target="#untidy-data">Untidy Data</a></li>
+  <li><a href="#untidy-data" id="toc-untidy-data" class="nav-link" data-scroll-target="#untidy-data">Untidy Data</a>
+  <ul class="collapse">
+  <li><a href="#why-is-this-data-untidy" id="toc-why-is-this-data-untidy" class="nav-link" data-scroll-target="#why-is-this-data-untidy">Why is this data untidy?</a></li>
+  <li><a href="#resources-to-tidy-your-data" id="toc-resources-to-tidy-your-data" class="nav-link" data-scroll-target="#resources-to-tidy-your-data">Resources to tidy your data</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/USFWS/ak-dm-guide/edit/dev/acquire/common-data-types/best-practices-in-tabular-data.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://doimspp.sharepoint.com/sites/fws-FF07D00000"><i class="bi bi-file-text"></i>Submit Feedback or suggest a change</a></li></ul></div></nav>
@@ -587,7 +585,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025-02-06</p>
+      <p class="date">2025-02-18</p>
     </div>
   </div>
   
@@ -601,7 +599,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="best-practices-in-tabular-data" class="level1">
 <h1>Best Practices in Tabular Data</h1>
-<p>Much of the Region’s data is contained in spreadsheets (i.e., tabular data, most commonly MS Excel files). Multiple spreadsheets within the same file can contain data and derivatives of the data (tables, summaries, pivot tables, formulas, figures). Below are some best practices when dealing with this type of data. </p>
+<p>Much of the Region’s data is contained in spreadsheets (i.e., tabular data, most commonly MS Excel files). Multiple spreadsheets within the same file can contain data and derivatives of the data (tables, summaries, pivot tables, formulas, figures). Below are some best practices when dealing with this type of data.</p>
 <ul>
 <li>One sheet in the file should contain a clean version of the data. Nothing else should be on this sheet. This is sometimes also referred to as <strong>tidy data</strong>. In tidy data:
 <ul>
@@ -611,52 +609,50 @@ ul.task-list li input[type="checkbox"] {
 <li>For the purposes of tidy data, blank cells indicate that the data point is missing; some use -9999 to indicate missing data. “0” in a cell means that the data point was collected and it was “0”. The treatment of missing data should <strong>always</strong> be recorded in the data dictionary (see below).</li>
 <li>The tidy data sheet, in addition to being part of the workbook, should also be saved in an open format (e.g.&nbsp;Text or CSV or TSV) using the same name as the Excel file (e.g., fish_data.xlsx and fish_data.csv) in the same archive folder as the Excel file.</li>
 </ul></li>
-<li>One sheet in the file should provide a brief description of each variable in the tidy data. Each row of this sheet represents one variable. This is termed the <strong>data dictionary</strong> and will be part of the metadata record for the tidy data. An example and a template for the data dictionary is available <a href="https://doimspp.sharepoint.com/:x:/s/AlaskaDataStewardship/EV4M7_juM5FOgGm9r_hWiOABsJDdLPaPQG0Bmm4sja5fsQ?e=wznkFo">here</a>. </li>
+<li>One sheet in the file should provide a brief description of each variable in the tidy data. Each row of this sheet represents one variable. This is termed the <strong>data dictionary</strong> and will be part of the metadata record for the tidy data. An example and a template for the data dictionary is available <a href="https://doimspp.sharepoint.com/:x:/s/AlaskaDataStewardship/EV4M7_juM5FOgGm9r_hWiOABsJDdLPaPQG0Bmm4sja5fsQ?e=wznkFo">here</a>.</li>
 <li>Other sheets in the file can contain summaries of the data (pivot tables), graphical representations of the data (figures), or derived quantities from the data (formulae, macros, etc). Avoid including metadata on these sheets.</li>
 <li>One sheet in the file should provide a brief description of each sheet in the file (what does it contain, any relevant information about its use) like a table of contents. Each row of this sheet represents one sheet of the file. First column is the sheet name, the second column is the sheet description.</li>
 <li>Save the original workbook in the most recent format supported by the application. For example, save Excel files in .xlsx format rather than .xls format.</li>
 </ul>
-<section id="tidy-data" class="level3">
-<h3 class="anchored" data-anchor-id="tidy-data">Tidy Data</h3>
+<section id="tidy-data" class="level2">
+<h2 class="anchored" data-anchor-id="tidy-data">Tidy Data</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/tidy.PNG" class="img-fluid figure-img"></p>
+<p><img src="../..\assets/tidy.png" class="img-fluid figure-img"></p>
 <figcaption>Tidy Data Example</figcaption>
 </figure>
 </div>
 </section>
-<section id="untidy-data" class="level3">
-<h3 class="anchored" data-anchor-id="untidy-data">Untidy Data</h3>
+<section id="untidy-data" class="level2">
+<h2 class="anchored" data-anchor-id="untidy-data">Untidy Data</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/untidy.PNG" class="img-fluid figure-img"></p>
+<p><img src="../..\assets/untidy.png" class="img-fluid figure-img"></p>
 <figcaption>Untidy Data Example</figcaption>
 </figure>
 </div>
-<section id="why-is-this-data-untidy" class="level4">
-<h4 class="anchored" data-anchor-id="why-is-this-data-untidy">Why is this data untidy?</h4>
+<section id="why-is-this-data-untidy" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-this-data-untidy">Why is this data untidy?</h3>
 <ul>
 <li>There are three different tables on one sheet
 <ul>
-<li> It is necessary for human intervention to tidy the spreadsheets up before they are machine-readable</li>
+<li>It is necessary for human intervention to tidy the spreadsheets up before they are machine-readable</li>
 </ul></li>
 <li>One row is NOT one observation</li>
 <li>One column is NOT one variable
 <ul>
 <li>Some of the values have indications of additional information</li>
 </ul></li>
-<li> Totals and percentages are calculated in the sheet
+<li>Totals and percentages are calculated in the sheet
 <ul>
 <li>Some of the rows have indications of formatting embedded</li>
 </ul></li>
 </ul>
 </section>
-<section id="resources-to-tidy-your-data" class="level4">
-<h4 class="anchored" data-anchor-id="resources-to-tidy-your-data">Resources to tidy your data</h4>
+<section id="resources-to-tidy-your-data" class="level3">
+<h3 class="anchored" data-anchor-id="resources-to-tidy-your-data">Resources to tidy your data</h3>
 <p><a href="http://www.ttdatavis.onthinktanks.org/how-tos/how-to-merge-and-tidy-data-with-excel">How to merge and tidy data with Excel</a></p>
 <p><a href="https://www.jeannicholashould.com/tidy-data-in-python.html">How to tidy data with Python</a></p>
-<p><br>
-</p>
 
 
 </section>
@@ -1116,7 +1112,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- Page updated: 2025-02-06
+ Page updated: 2025-02-18
   </li>  
 </ul>
     </div>
