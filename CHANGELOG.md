@@ -1,8 +1,17 @@
 # Change Log
-## Data Management User Guide
+
+Updates made to the Data Management User Guide
+
+## 20250219
+
+  - Open external links in new window
+  - Fixed miscellaneous broken links
+  - Moved files from `/share/untitled` to `/share`
+  - Added link to feedback form
 
 ## 20250218
-  - Add anchors to section headings (anchor-sections: true)
+
+  - Add anchors to section headings (anchor-sections = true)
   - Cleanup formatting in "acquire" directory
   - Cleanup formatting in "appendix" directory
   - Cleanup formatting in "background" directory

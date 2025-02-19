@@ -5,20 +5,22 @@ order: 1
 
 # Workflow
 
-![Generalized Alaska Data Management Workflow](</assets/ak-workflow.png>)
+
+![Generalized Alaska Data Management Workflow](/assets/ak-workflow.png){fig-alt="A circular diagram of the steps in the Alaska region data management workflow. The diagram begins with planning, followed by metadata, data collection, processing, metadata, and repository steps. Behind the circular diagram is an image of a braided river with snow-capped mountains in the distance, and a person on a packraft."} 
+
 
 ## Complete a Data Management Plan
 
-Data Management Plan (DMPs) serves as your data communication document with project staff and your data manager on data collection procedures, quality control practices, working files storage, and distribution preferences. One DMP option is the Alaska Region [machine-readable DMP template](broken-reference) that can be used to automatically initiate metadata records.
+Data Management Plan (DMPs) serves as your data communication document with project staff and your data manager on data collection procedures, quality control practices, working files storage, and distribution preferences. One DMP option is the Alaska Region [machine-readable DMP template](https://iris.fws.gov/APPS/ServCat/DownloadFile/225505) that can be used to automatically initiate metadata records.
 
 Even if you have started writing metadata, you should complete a DMP, if you have not done so.;
 
-If your project is ongoing (ie. annual survey), and you have already completed a DMP, please just take a moment to confirm that nothing has changed. ;
+If your project is ongoing (ie. annual survey), and you have already completed a DMP, please just take a moment to confirm that nothing has changed.
 
 
 ## Complete your PROJECT Metadata Record
 
-If you used the [machine-readable DMP template](broken-reference), you will have a Project metadata record populated from the fields in your DMP ready for updating in [mdEditor](https://www.mdeditor.org/) where records can be updated.  Needed updates will likely include adding GCMD keywords, taxonomy, and spatial extent, if not provided in the DMP.  See the [project metadata creation](broken-reference) section of this guidance to ensure that your project metadata meets the regional requirements.;
+If you used the [machine-readable DMP template](https://iris.fws.gov/APPS/ServCat/DownloadFile/225505), you will have a Project metadata record populated from the fields in your DMP ready for updating in [mdEditor](https://www.mdeditor.org/) where records can be updated.  Needed updates will likely include adding GCMD keywords, taxonomy, and spatial extent, if not provided in the DMP.  See the [project metadata creation](broken-reference) section of this guidance to ensure that your project metadata meets the regional requirements.
 
 If your are starting your metadata from scratch, this [training video](https://web.microsoftstream.com/video/30e18ae9-55bd-4d1c-a3aa-971089c88004) can help you get started.  Also, see the [project metadata creation](broken-reference) section in this guide.
 
@@ -39,7 +41,7 @@ When your metadata is complete, ask your data manager if a persistent identifier
 
 ## Store Data and Metadata
 
-Your data and completed metadata is required to be made publicly available.  The [Alaska Regional Data Repository](https://ak-region-dst.gitbook.io/alaska-region-interim-data-management-user-guide/four-fundamental-activities-of-data-management/security-and-preservation) is a regional home for the preservation of Alaska authoritative data and completed metadata.  Use of the RDR enables data managers to access and share your metadata and data with public repositories as appropriate.
+Your data and completed metadata is required to be made publicly available.  The [Alaska Regional Data Repository](https://ak-region-dst.gitbook.io/alaska-region-interim-data-management-user-guide/fundamental-activities/security-and-preservation) is a regional home for the preservation of Alaska authoritative data and completed metadata.  Use of the RDR enables data managers to access and share your metadata and data with public repositories as appropriate.
 
 
 ::: {.callout-important}
