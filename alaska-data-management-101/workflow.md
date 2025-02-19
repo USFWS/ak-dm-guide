@@ -1,5 +1,6 @@
 ---
 description: Brief overeview and descriptions of data management steps, workflows, and checklists
+order: 1
 ---
 
 # Workflow

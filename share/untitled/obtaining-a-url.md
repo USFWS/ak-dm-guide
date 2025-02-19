@@ -1,9 +1,9 @@
 # Obtaining a URL
 
-### Publishing to ScienceBase
+## Publishing to ScienceBase
 
 TBD
 
-### Publishing to ServCat
+## Publishing to ServCat
 
 TBD

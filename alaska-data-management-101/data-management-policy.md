@@ -1,6 +1,6 @@
 ---
 description: short descriptions of Data Management Policy and implications
-order: 2
+order: 4
 ---
 
 # Data Management Policy

@@ -1,6 +1,36 @@
 # Change Log
 ## Data Management User Guide
 
+## 20250218
+  - Add anchors to section headings (anchor-sections: true)
+  - Cleanup formatting in "acquire" directory
+  - Cleanup formatting in "appendix" directory
+  - Cleanup formatting in "background" directory
+  - Cleanup formatting in "fundamental-activities" directory
+  - Cleanup formatting in "planning" directory
+  - Cleanup formatting in "storage-options" directory
+
+  - Deleted empty "page-2.md"
+
+  - Renamed images:
+    - "figure1.PNG" to "data-project-compare.png"
+    - "image (1) (1).png" to "data-project-compare-2.png"
+    - "image (2).png" to "rdr-tree-fes-ex.png"
+    - "image (3) (1).png" to "repo-plus-ex.png"
+    - "image (9) (1).png" to "prod-plus-ex.png"
+    - "image (2) (1).png" to "producer-plus-ex.png"
+    - "image (10) (1).png" to "contact-plus-ex.png"
+    - "image (13).png" to "file-type-icons.png"
+    - "image (14).png" to "rdr-path.png"
+    - "image (16).png" to "rdr-horiz.png"
+
+  - Deleted duplicate images:
+    - "archive-layout.png" (= "rdr-structure.png")
+    - "contents.png" (= "contents-1200px.png")
+    - "image.png" (= "rdr-horiz.png"
+    - "image (14).png" (= "rdr-path.png")
+
+
 ## 20250214
   - Add appendix to table of contents
   - Updated workflow.md
