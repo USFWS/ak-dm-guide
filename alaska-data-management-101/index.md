@@ -1,9 +1,6 @@
 ---
-title: Ak DM 101
-order: 1
-toc: false
-other-links: false
-navbar-right: false
+title: Data Management 101
+order: 2
 ---
 
 This section will provide some basic information about data management in the Alaska Region

@@ -1,5 +1,5 @@
 ---
-order: 2
+title: File organization and best practices
 ---
 
-# new index ak-dm-folder updated
+# index.md in file organization folder

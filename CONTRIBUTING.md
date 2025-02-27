@@ -4,13 +4,13 @@ title: "How to contribute"
 
 Install Quarto
 
-The install shoudld update your path and run from any command terminal
+The install should update your path and run from any command terminal.
 
 Change to the project directory (if using GitHub Desktop, select "Repository - Open in Command prompt", or `Ctrl+\`)
 
-Run the "Quarto preview" to start a live preview session that will render the updated pages as you edit.
+Run the "Quarto preview" to start a live preview session that will render the updated pages as you edit. Some changes may not be automatically rendered by the preview, and you may need to exit (type `Ctrl-c` in the command window) and then restart the preview.
 
-After edits are complete, run "Quarto render" to render the entire site.
+The site may need to be re-built (run "Quarto render") after edits are complete. This is usually only needed prior to deploying a site to the server.
 
 # Style guide
 
@@ -50,6 +50,15 @@ Caution callout
 
 :::{.callout-important}
 Important callout. Maybe use this to higlight destructive operations.
+:::
+
+
+## Icons##
+
+Quarto uses [Bootstrap icons](https://icons.getbootstrap.com/) for various components (e.g., [Sidebar Tools](https://quarto.org/docs/reference/projects/websites.html#sidebar-tools)). Icons are referenced by name, as displayed on the Bootstrap icon page.
+
+:::{.callout-note}
+There is an extension that allows for the display of [Font Awesome](https://fontawesome.com/icons) icons within the body of the text, however, it is not currently installed.
 :::
 
 
