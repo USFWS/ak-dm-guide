@@ -8,7 +8,9 @@ The install should update your path and run from any command terminal.
 
 Change to the project directory (if using GitHub Desktop, select "Repository - Open in Command prompt", or `Ctrl+\`)
 
-Run the "Quarto preview" to start a live preview session that will render the updated pages as you edit. Some changes may not be automatically rendered by the preview, and you may need to exit (type `Ctrl-c` in the command window) and then restart the preview.
+Run the "[Quarto preview](https://quarto.org/docs/cli/preview.html)" command to start a live preview session that will render the updated pages as you edit. Some changes may not be automatically rendered by the preview, and you may need to exit (type `Ctrl-c` in the command window) and then restart the preview.
+
+The site will be served locally by Quarto and should open a browser session at: http://localhost:xxxx/, with a default port in the range of 3000-8000 being assigned. The system console will indicate the port that is selected.
 
 The site may need to be re-built (run "Quarto render") after edits are complete. This is usually only needed prior to deploying a site to the server.
 
