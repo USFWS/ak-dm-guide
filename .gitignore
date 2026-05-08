@@ -5,3 +5,5 @@ log-quarto.txt
 
 *.bak
 *.npp
+
+**/*.quarto_ipynb
