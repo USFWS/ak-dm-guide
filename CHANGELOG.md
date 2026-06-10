@@ -2,6 +2,33 @@
 
 Updates made to the Data Management User Guide
 
+## Unmerged
+
+### Changes:
+- Update CHANGELOG.md
+- Update readme.md
+- Update contributing.md
+- Update _quarto.yml
+  - rename nav bar link "original site" to "old site" ([#11](https://github.com/USFWS/ak-dm-guide/issues/11))
+  - add suggested citation as left footer ([#12](https://github.com/USFWS/ak-dm-guide/issues/12))
+  - remove announcement bar
+- Update using-the-regional-data-repository.md ([#15](https://github.com/USFWS/ak-dm-guide/issues/15))
+- Fix broken links and minor format edits ([#8](https://github.com/USFWS/ak-dm-guide/issues/8)):
+  - workflow.md
+  - "storage-options/index.md" ([#13](https://github.com/USFWS/ak-dm-guide/issues/13))
+
+### Added pages
+- Add "storage-options/README.md" page
+
+### Deleted pages
+- Delete "appendix/summary.md" page ([#8](https://github.com/USFWS/ak-dm-guide/issues/8))
+
+
+### Associated Pull requests:
+
+  - https://github.com/USFWS/ak-dm-guide/pull/14
+  - 
+
 ## 20250219
 
   - Open external links in new window
