@@ -8,6 +8,7 @@ Archiving project data and their associated metadata is critical for preserving 
 2. [Public-facing repositories](public-accessible-repositories.md) such as [ServCat](https://ecos.fws.gov/ServCat/) and [ScienceBase](https://www.sciencebase.gov/catalog/).
 
 
+
 ::: {.callout-note}
 While the type of short-term storage used is at the project leader's full discretion, all data **must** eventually be stored within a FWS repository.
 :::
