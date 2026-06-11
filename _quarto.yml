@@ -36,6 +36,10 @@ website:
         href: license.md
     right:
       - text: "Page updated: {{< meta date >}}"
+    left:
+      - text: "Suggested citation: Alaska Data Stewardship Team. Alaska Region Data Management Guide. U.S. Fish and Wildlife Service, Alaska Region. https://doi.org/10.7944/p9jf0rt6"
+
+ 
   
   search:
     location: sidebar
