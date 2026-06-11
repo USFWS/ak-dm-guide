@@ -9,11 +9,11 @@ project:
 website:
   title: "Alaska Region Data Management Guide"
   description: "General data management guidance and best practices for Alaska Region staff"
-  announcement:
-    content:  \"Edit this page\" link now directs to dev branch!
-    icon: newspaper
-    position: below-navbar
-    type: danger
+#  announcement:
+#    content:  \"Edit this page\" link now directs to dev branch!
+#    icon: newspaper
+#    position: below-navbar
+#    type: danger
     
   favicon: ak-forum-icon_200-tr.png
   reader-mode: true
@@ -36,6 +36,10 @@ website:
         href: license.md
     right:
       - text: "Page updated: {{< meta date >}}"
+    left:
+      - text: "Suggested citation: Alaska Data Stewardship Team. Alaska Region Data Management Guide. U.S. Fish and Wildlife Service, Alaska Region. https://doi.org/10.7944/p9jf0rt6"
+
+ 
   
   search:
     location: sidebar
@@ -94,7 +98,7 @@ website:
         text: Recent Changes
         
       - href: https://ak-region-dst.gitbook.io/alaska-region-interim-data-management-user-guide
-        text: Original Site
+        text: Old Site
         icon: book
 
 format:

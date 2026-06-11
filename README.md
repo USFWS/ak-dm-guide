@@ -1,14 +1,14 @@
 # Alaska Region Data Management User Guide source files
 
-The current production version can be found at https://ak-region-dst.gitbook.io/alaska-region-interim-data-management-user-guide/ (https://doi.org/10.7944/P9JF0RT6)
+The current production version of this user guide can be found at https://usfws.github.io/ak-dm-guide (https://doi.org/10.7944/P9JF0RT6)
 
-This directory contains the source data for the [Alaska Data Management User Guide](https://hmaier-fws.github.io/ak-dm-userguide). The site is rendered by the `quarto render` command with the compiled HTML being written to the **docs** directory.
+This directory contains the source data for the [Alaska Data Management User Guide](https://doi.org/10.7944/P9JF0RT6). The site is rendered by the `quarto render` command with the compiled HTML being written to the **docs** directory. After merging a branch (e.g., dev) into the main branch, the contents of the **docs** directory will be rendered by GitHub pages.
 
-## index.md files
+## readme.md files
 
-The default behavior of [Quarto](https://quarto.org) is to [not render index.md files](https://quarto.org/docs/websites/#render-targets). We can change that, but I am inclined to retain that function, allowing us to maintain developer documentation within the file structure
+The default behavior of [Quarto](https://quarto.org) is to [not render readme.md files](https://quarto.org/docs/websites/#render-targets). We can change that, but I am inclined to retain that function, allowing us to maintain developer documentation within the file structure.
 
-For example, **this file** (readme.md) is not rendered, but the index.md file is!
+For example, **this file** (readme.md) is not rendered as part of the user guide, but the **index.md** file is!
 
 # Contents
 
